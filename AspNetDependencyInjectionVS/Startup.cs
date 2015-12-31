@@ -32,10 +32,10 @@
                     $"ReferenceEquals(singleton1, singleton2): {object.ReferenceEquals(singleton1, singleton2)}<br>" +
                     $"ReferenceEquals(scoped1, scoped2): {object.ReferenceEquals(scoped1, scoped2)}<br>" +
                     $"ReferenceEquals(transient1, transient2): {object.ReferenceEquals(transient1, transient2)}<br><br>" +
-                    $"Singleton Id: {singleton1.Id}, Created: {singleton1.Created}, OtherService: {singleton1?.OtherService?.Id.ToString() ?? "null"}<br><br>" +
-                    $"Scoped Id: {scoped1.Id}, Created: {scoped1.Created}, OtherService: {scoped1?.OtherService?.Id.ToString() ?? "null"}<br><br>" +
-                    $"Transient 1 Id: {transient1.Id}, Created: {transient1.Created}, OtherService: {transient1?.OtherService?.Id.ToString() ?? "null"}<br>" +
-                    $"Transient 2 Id: {transient2.Id}, Created: {transient2.Created}, OtherService: {transient2?.OtherService?.Id.ToString() ?? "null"}" +
+                    $"Singleton Id: {singleton1.Id}, Created: {singleton1.Created}, OtherService: {singleton1.OtherService.Id}<br><br>" +
+                    $"Scoped Id: {scoped1.Id}, Created: {scoped1.Created}, OtherService: {scoped1.OtherService.Id}<br><br>" +
+                    $"Transient 1 Id: {transient1.Id}, Created: {transient1.Created}, OtherService: {transient1.OtherService.Id}<br>" +
+                    $"Transient 2 Id: {transient2.Id}, Created: {transient2.Created}, OtherService: {transient2.OtherService.Id}" +
                     "</body></html>");
             }));
         }
